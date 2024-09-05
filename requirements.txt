@@ -46,7 +46,7 @@ tensorflow == 2.5.0
 # F:\PROJECTS\Flask Projects\Tasty-Cook\Foodimg2Ing\utils\metrics.py: 6
 # F:\PROJECTS\Flask Projects\Tasty-Cook\Foodimg2Ing\utils\tb_visualizer.py: 3
 numpy == 1.19.3
-typing-extensions ==3.7.4
+typing-extensions ==4.7.1
 
 
 
