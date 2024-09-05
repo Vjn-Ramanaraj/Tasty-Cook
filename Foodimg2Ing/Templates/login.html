@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/authstyle.css') }}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <title>Login</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/cook.png') }}">
+        
+    </head>
+    <body>
+        <div align="center">
+            <div class="border">
+                <div class="header">
+                    <h1 class="word">Login</h1>
+                </div>
+                <form action="{{ url_for('login') }}" method="post">
+                    <div class="msg">{{ msg }}</div>
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/>
+                    <input type="submit" class="btn" value="Sign In">
+                </form>
+                
+                <p class="bottom">Don't have an account? <a href="{{ url_for('register') }}">Sign Up here</a></p>
+                <p class="bottomm"><a href="{{ url_for('forgot_password') }}">Forgot Password</a></p>
+            </div>
+        </div>
+    </body>
+</html>
